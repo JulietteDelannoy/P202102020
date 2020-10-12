@@ -1,0 +1,164 @@
+
+
+
+/* font */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('projet2reservia/font/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('projet2reservia/font/Raleway-VariableFont_wght.ttf') format('truetype');
+    src: url('projet2reservia/font/static/Raleway-Black.ttf') format('truetype');
+   
+}
+
+
+/*Header*/
+
+
+.top
+{ display: flex;
+    justify-content: space-between;
+}
+
+nav ul
+{
+    
+    display: inline-flex;
+    list-style-type: none;
+   
+    
+}
+nav li
+{
+    margin-right: 15px;
+   
+}
+nav a
+{
+    font-size: 1.3em;
+    color:black;
+    text-decoration: none; 
+}
+
+nav a:hover
+{
+    color:#0065FC;
+    border-top: 1px solid #0065FC;
+}
+
+
+
+
+
+/*body*/
+
+.vignette
+{
+    width: 20%;
+    min-width: 200px;
+    height: auto;
+    border: 10px solid #FFFFFF;
+    border-radius: 15px;
+    position: relative;
+    margin: 1em;
+    box-shadow: 0px 4px 2px #F2F2F2
+  
+}
+
+.texte
+{
+    position: absolute;
+    background-color: #FFFFFF;
+}
+
+.hotel
+{display: flex;
+    flex-wrap: wrap;
+}
+
+.hebpop
+{display: flex;}
+
+.reponse img
+
+ {
+    
+    width: 100%;
+    height: auto;
+        }
+
+.activite img
+
+     {
+           
+     width: 100%;
+    height: auto;
+               }
+       
+.icones img{
+
+    width: 24px;
+    height: 24px;
+    color: blue;
+    }
+
+.reponse
+{ background-color:#F2F2F2;
+    border-radius: 15px;
+}
+
+.reponse, .activite
+{ 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/*Footer*/
+
+
+
+footer
+{
+    background-color:#F2F2F2;
+    display: flex;
+    
+}
+ul
+{
+    list-style-type: none;
+}
+
+
+
+
+
+
+/* Format images et textes
+pour ecran ordi: 
+body
+{
+    width: 1100px;
+    margin: auto;
+}  */
+@media all and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+}
+
+
+
+
+
+
+
+
+/* règles CSS pour  mobiles  */
+@media all and (max-device-width: 480px)
+{
+    
+}
