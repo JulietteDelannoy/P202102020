@@ -52,6 +52,73 @@ nav a:hover
 
 /*body*/
 
+    /*filtre solution 1*/
+
+    
+.rechercheville1
+{
+    display: flex;
+    border: 3px solid #F2F2F2;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.button
+{
+
+    background-color: #0065FC;
+    color: #FFFFFF;
+    
+/*filtre solution 2 */
+}
+    table
+    {
+        border-collapse: collapse;
+        border-radius: 50px;
+        border: 3px solid #F2F2F2;
+        width: 300px;
+        
+    }
+    
+.recherche2
+{
+    background-color: #0065FC;
+    color: #FFFFFF;
+}
+
+/*filtre solution 3 */
+    .rechercheville3
+    {
+        display: flex;
+        border: 3px solid #F2F2F2;
+        width: 300px;
+        
+    }
+
+    .icones
+    {
+background-color: #F2F2F2;
+
+    }
+.ville 
+{
+    margin-left: 1em;
+    border: 3px solid #F2F2F2;
+    border-radius: 25px;
+}
+
+.recherche
+{
+    background-color: #0065FC;
+    border: 3px solid #F2F2F2;
+    border-top-left-radius: 15px;
+    color: #FFFFFF;
+    margin-left: 1em;
+}
+
+
+/* corps de la page*/ 
+
 .vignette
 {
     width: 20%;
@@ -99,7 +166,7 @@ nav a:hover
 
     width: 24px;
     height: 24px;
-    color: blue;
+    
     }
 
 .reponse
