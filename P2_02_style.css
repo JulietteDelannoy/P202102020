@@ -209,16 +209,24 @@ body
     width: 1100px;
     margin: auto;
 }  */
-@media all and (max-width: 1024px)
+
+
+@media (min-width:781) and (max-width: 1024px)
 {
     #bloc_page
     {
-        width: auto;
+        width: 1150px;
+        margin: auto;
+        color: red;
     }
 }
 
+@media (min-width:481) and (max-width: 780px)
+{
+    {background-color: black;
 
-
+    }
+}
 
 
 
@@ -228,4 +236,16 @@ body
 @media all and (max-device-width: 480px)
 {
     
+#bloc_page
+{
+    width: 450px;
+    color: red
+}
+.reponse, .activite
+{ 
+    display: table;
+    flex-wrap: wrap;
+    color: red;
+}
+
 }
