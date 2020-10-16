@@ -143,7 +143,7 @@ background-color: #F2F2F2;
     flex-wrap: wrap;
 }
 
-.hebpop
+.block1
 {display: flex;}
 
 .reponse img
@@ -210,24 +210,25 @@ body
     margin: auto;
 }  */
 
-
-@media (min-width:781) and (max-width: 1024px)
+/* règles CSS pour  ordi  */
+@media all and (min-width:781) 
 {
-    #bloc_page
+  body  
     {
-        width: 1150px;
-        margin: auto;
-        color: red;
-    }
+        background-color: blue;
+        color: rgb(174, 0, 255);
+    }  
 }
 
-@media (min-width:481) and (max-width: 780px)
+/* règles CSS pour  tablette  */
+@media all and (min-width:481) and (max-width: 780px)
 {
+    body
     {background-color: black;
+        color: blue;
 
     }
 }
-
 
 
 
@@ -236,11 +237,18 @@ body
 @media all and (max-device-width: 480px)
 {
     
-#bloc_page
+body
 {
     width: 450px;
     color: red
 }
+
+.block1
+{
+    display: flex;
+    flex-direction: column;
+}
+
 .reponse, .activite
 { 
     display: table;
@@ -249,3 +257,4 @@ body
 }
 
 }
+
