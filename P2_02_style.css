@@ -10,7 +10,13 @@
     src: url('projet2reservia/font/static/Raleway-Black.ttf') format('truetype');
    
 }
+/*Général*/
 
+body
+{
+    width: 1400px;
+    margin: auto;
+}
 
 /*Header*/
 
