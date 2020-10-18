@@ -2,20 +2,15 @@
 
 
 /* font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@font-face {
-    font-family: 'Raleway';
-    src: url('projet2reservia/font/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
-    src: url('projet2reservia/font/Raleway-VariableFont_wght.ttf') format('truetype');
-    src: url('projet2reservia/font/static/Raleway-Black.ttf') format('truetype');
-   
-}
 /*Général*/
 
 body
 {
-    width: 1400px;
+    width: 1600px;
     margin: auto;
+    font-family: 'Raleway', sans-serif;
 }
 
 /*Header*/
@@ -125,6 +120,25 @@ background-color: #F2F2F2;
 
 /* corps de la page*/ 
 
+figure {
+    width: 250px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0px 4px 2px #F2F2F2
+}
+
+figure p, figure h4 { 
+    margin: 0;
+}
+
+figure h4 {
+    padding: 6px 0px 4px 0px;
+}
+
+figure p { 
+    padding: 4px 0 2px 0;
+}
 .vignette
 {
     width: 20%;
@@ -138,11 +152,7 @@ background-color: #F2F2F2;
   
 }
 
-.texte
-{
-    position: absolute;
-    background-color: #FFFFFF;
-}
+
 
 .hotel
 {display: flex;
@@ -252,7 +262,7 @@ body
 .block1
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .reponse, .activite
