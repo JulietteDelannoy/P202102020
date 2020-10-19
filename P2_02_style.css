@@ -8,7 +8,7 @@
 
 body
 {
-    width: 1600px;
+    
     margin: auto;
     font-family: 'Raleway', sans-serif;
 }
@@ -46,7 +46,6 @@ nav a:hover
     color:#0065FC;
     border-top: 1px solid #0065FC;
 }
-
 
 
 
@@ -122,10 +121,27 @@ background-color: #F2F2F2;
 
 figure {
     width: 250px;
-    background-color: #FFFFFF;
-    border-radius: 8px;
+    
+     background-color: #FFFFFF;
+    border-radius: 15px;
     padding: 8px;
-    box-shadow: 0px 4px 2px #F2F2F2
+    box-shadow: 0px 8px 4px #e0dddd
+  
+
+}
+
+h1
+{
+    margin: 15px;
+}
+
+figure img {
+
+    width: 100%;
+    max-height: 150px;
+ 
+  border-radius: 15px;
+
 }
 
 figure p, figure h4 { 
@@ -139,64 +155,71 @@ figure h4 {
 figure p { 
     padding: 4px 0 2px 0;
 }
-.vignette
-{
-    width: 20%;
-    min-width: 200px;
-    height: auto;
-    border: 10px solid #FFFFFF;
-    border-radius: 15px;
-    position: relative;
-    margin: 1em;
-    box-shadow: 0px 4px 2px #F2F2F2
-  
-}
 
-
+ .reponse
+ {
+   background-color: #F2F2F2;  
+ width: 70%;
+ max-width: 1200px;
+   
+ }
+    
 
 .hotel
-{display: flex;
+
+{
+    display: flex;
     flex-wrap: wrap;
+     
+}
+.populaire
+{
+  
+    background-color: #F2F2F2; 
+
+}
+
+.populaire figure
+{
+    display: flex;
+    width: 400px;
+}
+
+.populaire img
+{
+    width: 200px;
+    height: auto;
+}
+
+.populaire p, .populaire h4
+{
+    margin: 5px;
 }
 
 .block1
-{display: flex;}
-
-.reponse img
-
- {
-    
-    width: 100%;
-    height: auto;
-        }
-
-.activite img
-
-     {
-           
-     width: 100%;
-    height: auto;
-               }
-       
-.icones img{
-
-    width: 24px;
-    height: 24px;
-    
-    }
-
-.reponse
-{ background-color:#F2F2F2;
-    border-radius: 15px;
+{
+    display: flex;
+   
 }
 
-.reponse, .activite
-{ 
+.fas
+{
+    color: blue;
+}
+
+.activite
+{
     display: flex;
     flex-wrap: wrap;
 }
 
-
+img.haute 
+{
+    max-height: 4000px;
+    height: 500px;
+    width: 500px;
+    background-color: brown;
+}
 
 /*Footer*/
 
@@ -218,32 +241,27 @@ ul
 
 
 
-/* Format images et textes
-pour ecran ordi: 
-body
-{
-    width: 1100px;
-    margin: auto;
-}  */
 
 /* règles CSS pour  ordi  */
-@media all and (min-width:781) 
+@media all and (min-device-width:781) 
 {
   body  
     {
         background-color: blue;
         color: rgb(174, 0, 255);
     }  
+.hotel
+{
+    width: 1200px;
+    background-color: blue;
 }
 
-/* règles CSS pour  tablette  */
-@media all and (min-width:481) and (max-width: 780px)
-{
-    body
-    {background-color: black;
-        color: blue;
+p
 
-    }
+
+{background-color: blue;
+
+}
 }
 
 
@@ -255,7 +273,7 @@ body
     
 body
 {
-    width: 450px;
+   
     color: red
 }
 
