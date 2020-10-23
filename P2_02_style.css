@@ -9,29 +9,37 @@
 body
 {
     
-    margin: auto;
+    margin: 5em;
     font-family: 'Raleway', sans-serif;
 }
 
 /*Header*/
 
+header img
+{
+height: 4em;
 
-.top
-{ display: flex;
-    justify-content: space-between;
 }
 
+header
+
+{ display: flex;
+    
+    justify-content: space-between;
+    
+}
 nav ul
 {
     
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap-reverse;
     list-style-type: none;
    
     
 }
 nav li
 {
-    margin-right: 15px;
+    margin-right: 6em;
    
 }
 nav a
@@ -39,15 +47,20 @@ nav a
     font-size: 1.3em;
     color:black;
     text-decoration: none; 
+   padding-top: 4em;
 }
 
 nav a:hover
 {
     color:#0065FC;
-    border-top: 1px solid #0065FC;
+    border-top: 2px solid #0065FC;
+   
 }
-
-
+.inscrire
+{
+    color:#0065FC;
+    font-weight: bold;
+}
 
 
 /*body*/
@@ -62,12 +75,25 @@ nav a:hover
     border-radius: 15px;
     width: 300px;
 }
+input{
+margin: 00px;
+
+
+}
+.form
+{
+    border: 0px;
+}
 
 .button
 {
 
     background-color: #0065FC;
     color: #FFFFFF;
+    border-right:#0065FC ;
+    border-radius: 0 1em 1em 0;
+    
+    padding: 0.5em;
     
 /*filtre solution 2 */
 }
@@ -95,11 +121,7 @@ nav a:hover
         
     }
 
-    .icones
-    {
-background-color: #F2F2F2;
-
-    }
+    
 .ville 
 {
     margin-left: 1em;
@@ -116,31 +138,100 @@ background-color: #F2F2F2;
     margin-left: 1em;
 }
 
+.filtre
+{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+ 
+}
+
+.select
+{
+    border: 3px solid #F2F2F2;
+    border-radius: 30px;
+    margin-left: 1em;
+    padding: 1em;
+        display: block;
+        
+}
+
+.filtre .fas
+{
+    background-color:#DEEBFF ;
+    border-radius: 60px;
+    border: 9px solid #DEEBFF ;
+
+}
+
+.filtre :hover
+{
+background-color: #0065FC;
+color: #F2F2F2;
+
+}
+
+.filtre .fas :hover
+{
+    background-color:#DEEBFF ;
+    border-radius: 60px;
+    border: 9px solid #DEEBFF ;
+}
+.disponible
+{
+    margin: 1em;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+.disponible .fas 
+
+{
+
+    color: #0065FC;
+    border: 9px solid #DEEBFF ;
+    background-color: #FFFFFF;
+    border-radius: 60px;
+}
+
+
 
 /* corps de la page*/ 
 
 figure {
     width: 250px;
-    
+    height: 200px;
      background-color: #FFFFFF;
     border-radius: 15px;
-    padding: 8px;
+    padding: 3px;
     box-shadow: 0px 8px 4px #e0dddd
   
 
 }
 
-h1
+img
 {
-    margin: 15px;
+    object-fit: cover;
 }
 
-figure img {
+h1
+{
+    margin-bottom: 1.5em;
+    margin-left: 3.5em;
+    font-size: 1.5rem;
+}
+.prix
+{
+    font-weight: bold;
+}
+
+figure p img 
+{
 
     width: 100%;
     max-height: 150px;
- 
-  border-radius: 15px;
+    height: 120px;
+   border-radius: 15px;
 
 }
 
@@ -154,6 +245,7 @@ figure h4 {
 
 figure p { 
     padding: 4px 0 2px 0;
+    font-size: 0.8rem;
 }
 
  .reponse
@@ -161,6 +253,7 @@ figure p {
    background-color: #F2F2F2;  
  width: 70%;
  max-width: 1200px;
+ border-radius: 15px;
    
  }
     
@@ -175,10 +268,29 @@ figure p {
 .populaire
 {
   
-    background-color: #F2F2F2; 
+    background-color: #F2F2F2;
+    border-radius: 15px; 
 
 }
 
+.populaire h1
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+    
+}
+
+h1 .fas 
+
+{
+    color: black;
+}
+
+.grey
+{
+    color: #F2F2F2;
+}
 .populaire figure
 {
     display: flex;
@@ -196,30 +308,49 @@ figure p {
     margin: 5px;
 }
 
-.block1
+.section1
 {
     display: flex;
    
 }
 
-.fas
+.blue
 {
-    color: blue;
+   color: #0065FC;
+    
 }
-
+.filtre .fas
+{
+    color: #0065FC;
+     
+ }
+.section2 ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: saddlebrown;
+}
 .activite
 {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    width: 40%;
+    height: 700px;
 }
 
-img.haute 
-{
-    max-height: 4000px;
-    height: 500px;
-    width: 500px;
-    background-color: brown;
-}
+ .haute img
+ {
+     max-height: 400px;
+     height: 300px;
+ }
+
+ .haute
+ {
+     max-height: 400px;
+     height: 400px;
+     background-color: royalblue;
+ }
 
 /*Footer*/
 
@@ -229,17 +360,27 @@ footer
 {
     background-color:#F2F2F2;
     display: flex;
-    
+    flex-wrap: wrap;
+  width: 100%;
+ 
+   
 }
 ul
 {
     list-style-type: none;
+    
 }
 
+footer ul
+{
 
-
-
-
+    margin-right: 15em;
+}
+a 
+{
+    color: black;
+    text-decoration: none;
+}
 
 
 /* règles CSS pour  ordi  */
@@ -265,6 +406,15 @@ p
 }
 
 
+/* règles CSS pour  tablette  */
+@media all and (min-width:481) and (max-width: 780px)
+{
+    body
+    {background-color: black;
+        color: blue;
+
+    }
+}
 
 
 /* règles CSS pour  mobiles  */
@@ -288,6 +438,13 @@ body
     display: table;
     flex-wrap: wrap;
     color: red;
+}
+
+footer
+{
+
+    display: flex;
+    flex-direction: column;
 }
 
 }
