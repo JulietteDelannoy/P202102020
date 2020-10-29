@@ -68,22 +68,27 @@ nav a:hover
     /*filtre solution 1*/
 
     
-.rechercheville1
+.search_place
 {
     display: flex;
     border: 3px solid #F2F2F2;
     border-radius: 15px;
-    width: 300px;
+    width: 340px;
 }
-input{
-margin: 00px;
+.search_place .fas
 
-
+{
+padding-right: 1em;
+padding-left: 0.8em;
+padding-top: 0.4em;
+border-right: #F2F2F2;
 }
-.form
+
+input
 {
     border: 0px;
 }
+
 
 .button
 {
@@ -92,91 +97,80 @@ margin: 00px;
     color: #FFFFFF;
     border-right:#0065FC ;
     border-radius: 0 1em 1em 0;
+        padding: 0.5em;
     
-    padding: 0.5em;
-    
-/*filtre solution 2 */
-}
-    table
-    {
-        border-collapse: collapse;
-        border-radius: 50px;
-        border: 3px solid #F2F2F2;
-        width: 300px;
-        
-    }
-    
-.recherche2
-{
-    background-color: #0065FC;
-    color: #FFFFFF;
-}
-
-/*filtre solution 3 */
-    .rechercheville3
-    {
-        display: flex;
-        border: 3px solid #F2F2F2;
-        width: 300px;
-        
     }
 
-    
-.ville 
-{
-    margin-left: 1em;
-    border: 3px solid #F2F2F2;
-    border-radius: 25px;
-}
 
-.recherche
-{
-    background-color: #0065FC;
-    border: 3px solid #F2F2F2;
-    border-top-left-radius: 15px;
-    color: #FFFFFF;
-    margin-left: 1em;
-}
+
+/*filtre selection */
+    
 
 .filtre
 {
     display: flex;
     flex-wrap: wrap;
     font-weight: bold;
+    align-items: center;
  
 }
 
-.select
-{
-    border: 3px solid #F2F2F2;
+.filter p:last-child {
+    padding: 0 10px;
+}
+
+.filter {
+    height: 40px;
+    border: 2px solid #F2F2F2;
+    display: flex;
     border-radius: 30px;
-    margin-left: 1em;
-    padding: 1em;
-        display: block;
-        
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    margin: 1em;
 }
 
-.filtre .fas
+.filter p {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.filter p:last-child {
+    padding: 0 10px;
+}
+
+.filtre .fas {
+    background-color: #DEEBFF;
+    border-radius: 60px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0px;
+}
+
+
+.filter :hover
+{
+    background-color: #0065FC;
+    color: #F2F2F2;
+   background: #0065FC;
+    cursor: pointer;
+}
+
+.filter :hover
+{
+    background-color: #DEEBFF;
+}
+/*
+.filter .fas :hover
 {
     background-color:#DEEBFF ;
     border-radius: 60px;
     border: 9px solid #DEEBFF ;
-
 }
-
-.filtre :hover
-{
-background-color: #0065FC;
-color: #F2F2F2;
-
-}
-
-.filtre .fas :hover
-{
-    background-color:#DEEBFF ;
-    border-radius: 60px;
-    border: 9px solid #DEEBFF ;
-}
+*/
 .disponible
 {
     margin: 1em;
@@ -189,11 +183,15 @@ color: #F2F2F2;
 {
 
     color: #0065FC;
-    border: 9px solid #DEEBFF ;
+    border: 1px solid #DEEBFF ;
     background-color: #FFFFFF;
-    border-radius: 60px;
+    border-radius: 50%;
+    padding: 0.3em 0.7em;
+    width: 0.1em;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.2em; 
 }
-
 
 
 /* corps de la page*/ 
@@ -204,8 +202,8 @@ figure {
      background-color: #FFFFFF;
     border-radius: 15px;
     padding: 3px;
+    padding-top: 1px;
     box-shadow: 0px 8px 4px #e0dddd
-  
 
 }
 
@@ -216,15 +214,24 @@ img
 
 h1
 {
-    margin-bottom: 1.5em;
+    margin-bottom: 0.7em;
+    margin-top: 1.7em;
     margin-left: 3.5em;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+}
+.reponse h3
+
+{
+    margin-left: 3.5em;
 }
 .prix
 {
     font-weight: bold;
 }
-
+.grey
+{
+    color: #F2F2F2;
+}
 figure p img 
 {
 
@@ -246,31 +253,46 @@ figure h4 {
 figure p { 
     padding: 4px 0 2px 0;
     font-size: 0.8rem;
+   
 }
+
+
 
  .reponse
  {
    background-color: #F2F2F2;  
- width: 70%;
- max-width: 1200px;
- border-radius: 15px;
+  border-radius: 15px;
    
  }
-    
+ .section1
+{
+    display: flex;
+       
+}
 
+.blue, .filtre .fas
+{
+   color: #0065FC;
+    
+}
+
+
+/*Hebergement*/
 .hotel
 
 {
     display: flex;
     flex-wrap: wrap;
-     
+    width: auto;
+    max-width: 1200px;
+   
+ 
 }
+/*populaire */
 .populaire
 {
-  
-    background-color: #F2F2F2;
+      background-color: #F2F2F2;
     border-radius: 15px; 
-
 }
 
 .populaire h1
@@ -287,20 +309,24 @@ h1 .fas
     color: black;
 }
 
-.grey
-{
-    color: #F2F2F2;
-}
 .populaire figure
 {
     display: flex;
-    width: 400px;
+    width: auto;
+    min-width: 340px;
+    height: auto;
+    max-width: 150px;
+   
+    
 }
 
-.populaire img
+.populaire p img
 {
-    width: 200px;
+    max-width: 130px;
+    max-height: 132px;
     height: auto;
+    border-radius: 15px 0px 0px 15px ;
+    
 }
 
 .populaire p, .populaire h4
@@ -308,37 +334,14 @@ h1 .fas
     margin: 5px;
 }
 
-.section1
-{
-    display: flex;
-   
-}
 
-.blue
-{
-   color: #0065FC;
-    
-}
-.filtre .fas
-{
-    color: #0065FC;
-     
- }
-.section2 ul
-{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: saddlebrown;
-}
+/*Activite*/
 .activite
 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    width: 40%;
-    height: 700px;
+   
 }
-
  .haute img
  {
      max-height: 400px;
@@ -349,7 +352,12 @@ h1 .fas
  {
      max-height: 400px;
      height: 400px;
-     background-color: royalblue;
+    
+ }
+ .small
+ {
+     display: flex;
+     flex-direction: column;
  }
 
 /*Footer*/
@@ -382,35 +390,19 @@ a
     text-decoration: none;
 }
 
-
+ 
 /* règles CSS pour  ordi  */
-@media all and (min-device-width:781) 
+@media all and (min-device-width:1025px) 
 {
-  body  
-    {
-        background-color: blue;
-        color: rgb(174, 0, 255);
-    }  
-.hotel
-{
-    width: 1200px;
-    background-color: blue;
+
+    
 }
-
-p
-
-
-{background-color: blue;
-
-}
-}
-
 
 /* règles CSS pour  tablette  */
-@media all and (min-width:481) and (max-width: 780px)
+@media all and (min-width:426px) and (max-width: 1024px)
 {
     body
-    {background-color: black;
+    {
         color: blue;
 
     }
@@ -418,7 +410,7 @@ p
 
 
 /* règles CSS pour  mobiles  */
-@media all and (max-device-width: 480px)
+@media all and (max-device-width: 425px)
 {
     
 body
@@ -427,7 +419,7 @@ body
     color: red
 }
 
-.block1
+.section1
 {
     display: flex;
     flex-direction: column-reverse;

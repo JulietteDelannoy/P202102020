@@ -11,15 +11,17 @@
 <body>
 <!-- Header -->
 <header >
-	
+	<nav> 
 	<img src="Projet2Reservia/images/logo/reserviapng.png" alt="Reservia"  />
    			
 		<!--lien de navigation dans la page-->
-			<nav> 
+			<p><a href="#" class="inscrire"  >S'inscrire</a></p>
+			
+				
 				<ul>
 					<li> <a href="#hebergement">Hébergement</a></li>
 					<li> <a href="#activite">Activités</a></li>
-					<li><a href="#" class="inscrire"  >S'inscrire</a></li>
+					
 				</ul>
 
 			</nav>
@@ -37,13 +39,16 @@
 
 	<!--moteur de recherche lieu-->
 	
+
+
+
 <p>
-	<div class="rechercheville1">
+	<div class="search_place">
 		
 		<i class="fas fa-map-marker-alt"></i>
 			<form method="post" action="traitement.php" class="form">
 
- 			<input type="text" name="ville" value="Marseille, France" />
+ 			<input type="text" name="ville" class="ville" placeholder="Marseille, France" size="25" maxlenght="25"/>
  			<input type="button" class="button" value="Rechercher">
    
 		</form>
@@ -52,32 +57,6 @@
 	</div>
 </p>
 
-<!--moteur de recherche lieu solution 2-->
-
-solution 2
-
-
-	
-<div class="rechercheville2">
-	<table>
-		<tr>
-			<td><i class="fas fa-map-marker-alt"></i></td>
-			<td>Marseille, France</td>
-			<td><div class="recherche2">Rechercher</div></td>
-		</tr>
-	 </table>
-</div>
-</br>
-<!--moteur de recherche lieu solution 3-->
-solution 3
-
-<div class="rechercheville3">
-	
-<div class="icones">
-<i class="fas fa-map-marker-alt"></i></div>	
-<div class="ville">Marseille, France</div> 
-<div class="recherche">  Rechercher</div>
-</div>
 
 
 </section>
@@ -86,17 +65,36 @@ solution 3
 <section class="filtre">
 	<h3> Filtres </h3>
 
-	<div class="select"><i class="fas fa-money-bill-wave"></i>
-	Economique</div>
+<p>
+	<div class="filter">
+		<p><i class="fas fa-money-bill-wave"></i></p>
+		<p>Économique</p>
+	</div>
 
-	<div class="select"><i class="fas fa-child"></i>
-	Familial</div>
+</p>
 
-	<div class="select"><i class="fas fa-heart"></i>
-	Romantique</div>
+<p>
+	<div class="filter">
+		<p><i class="fas fa-child"></i></p>
+		<p>Familial</p>
+	</div>
 
-	<div class="select"><i class="fas fa-dog"></i>
-	Animaux autorisés</div>
+</p>
+<p>
+	<div class="filter">
+		<p><i class="fas fa-heart"></i></p>
+		<p>Romantique</p>
+	</div>
+
+</p>
+<p>
+	<div class="filter">
+		<p><i class="fas fa-dog"></i></p>
+		<p>Animaux autorisés</p>
+	</div>
+
+</p>
+
 
 </section>
 <section class="disponible">
@@ -138,7 +136,7 @@ solution 3
 						<p><img src="projet2reservia/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" title="Hotel du port" alt="Hotel du port"/>
 						<figcaption>
 							<h4>Hôtel du port</h4>
-							<p>Nuit à partir de <span class="prix">53€</span></p>
+							<p>Nuit à partir de 53<span class="prix">€</span></p>
 							<p>
 								<span class="blue">	<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
@@ -157,7 +155,7 @@ solution 3
 						<p><img src="projet2reservia/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" title="Les mouettes" alt="Les mouettes"/>
 						<figcaption>
 							<h4>Hôtel Les mouettes</h4>
-							<p>Nuit à partir de <span class="prix">76€</span></p>
+							<p>Nuit à partir de 76<span class="prix">€</span></p>
 							<p>
 								<span class="blue">	<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
@@ -176,7 +174,7 @@ solution 3
 						<p><img src="projet2reservia/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" title= "Hotel de la mer" alt="Hotel de la mer"/>
 						<figcaption>
 							<h4>Hôtel de la mer</h4>
-							<p>Nuit à partir de <span class="prix">46€</span></p>
+							<p>Nuit à partir de 46<span class="prix">€</span></p>
 							<p>
 								<span class="blue">	<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
@@ -216,7 +214,7 @@ solution 3
 						<p><img src="projet2reservia/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" title="Chez Amina" alt="Chez Amina"/>
 						<figcaption>
 							<h4>Hôtel chez Amina</h4>
-							<p>Nuit à partir de <span class="prix">96€</span></p>
+							<p>Nuit à partir de 96<span class="prix">€</span></p>
 							<p>
 								<span class="blue">	<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
@@ -249,7 +247,7 @@ solution 3
 						<p><img src="projet2reservia/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" title="Le soleil du matin" alt="Le soleil du matin"/>
 							<figcaption>
 								<h4>Hôtel Le soleil du matin</h4>
-							<p>Nuit à partir de <span class="prix">128€</span></p>
+							<p>Nuit à partir de 128<span class="prix">€</span></p>
 							<p>
 								<span class="blue">	<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
@@ -268,7 +266,7 @@ solution 3
 					<figure>
 						<p><img src="projet2reservia/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" title="Au coeur de l'eau" alt="Au coeur de l'eau"/>
 							<figcaption><h4>Au coeur de l'eau <br/> Chambres d'hôtes</h2></h4>
-							<p>Nuit à partir de <span class="prix">71€</span></p>
+							<p>Nuit à partir de 71<span class="prix">€</span></p>
 							<p>
 								<span class="blue">	<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
@@ -286,7 +284,7 @@ solution 3
 					<figure>
 						<p><img src="projet2reservia/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" title="Hotel tout bleu tout blanc" alt="Hotel tout bleu tout blanc"/>
 							<figcaption><h4>Hôtel Tout bleu et Blanc</h4>
-							<p>Nuit à partir de <span class="prix">68€</span></p>
+							<p>Nuit à partir de 68<span class="prix">€</span></p>
 							<p>
 								<span class="blue">	<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
@@ -308,8 +306,8 @@ solution 3
 	<h1>Activités à Marseille</h1>
 	
 		
-		<ul class="activite">
-			<li >
+		<div class="activite">
+			
 				<a href="#">
 				<figure class= "haute">
 					<p ><img src="projet2reservia/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" title="Vieux port" alt="Vieux port" /></p>	
@@ -317,9 +315,9 @@ solution 3
 					</figcaption>
 				</figure>
 				</a>
-			</li>
+		
 
-			<li>
+			<div class="small">
 				<a href="#">
 				<figure>		
 					<p><img src="projet2reservia/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" title="Fort de Pomègues" alt="Fort de Pomègues"/>
@@ -327,9 +325,9 @@ solution 3
 				</figcaption>
 				</figure>
 				</a>	
-			</li>
 		
-			<li>
+		
+		
 				<a href="#">
 				<figure>
 			<p><img src="projet2reservia/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" title="Iles du Frioul" alt="Iles du Frioul"/>
@@ -337,10 +335,9 @@ solution 3
 			</figcaption>
 				</figure>
 				</a>	
-			</li>
-		</ul>
-		<ul class="activite">
-			<li>
+			</div>
+	
+			
 				<a href="#">
 				<figure class= "haute">
 					<p>		<img src="projet2reservia/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" title="Parc National des Calanques" alt="Parc National des Calanques"/>
@@ -348,9 +345,9 @@ solution 3
 				</figcaption>
 				</figure>
 				</a>
-			</li>
+			
 
-			<li>
+				<div class="small">
 				<a href="#">
 				<figure>
 					<p>		<img src="projet2reservia/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" title="Notre-Dame-de-la-Garde" alt="Notre-Dame-de-la-Garde"/>
@@ -358,10 +355,10 @@ solution 3
 				</figcaption>
 				</figure>
 				</a>
-			</li>
+			
 	
 	
-			<li>
+			
 				<a href="#">
 				<figure>			
 					<p> 	<img src="projet2reservia/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" title="Parc Longchamp" alt="Parc Longchamp"/>
@@ -369,8 +366,8 @@ solution 3
 				</figcaption>
 			</figure>
 			</a>
-			</li>
-		</ul>
+				</div>
+		</div>
 
 </section>
 
